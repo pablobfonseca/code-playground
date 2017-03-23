@@ -22,7 +22,7 @@ class AssistantController < ApplicationController
   private
 
   def parameters
-    params.dig(:result, :parameters, 'any')
+    params[:result][:parameters]['any']
   end
 
   def any_parameter?
