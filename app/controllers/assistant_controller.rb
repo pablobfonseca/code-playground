@@ -21,7 +21,7 @@ class AssistantController < ApplicationController
 
   private
 
-  def paramters
+  def parameters
     params.dig(:result, :parameters, 'any')
   end
 
